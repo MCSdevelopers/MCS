@@ -1,0 +1,12 @@
+<hibernate-mapping>
+    <class name="logic.Specialist" table="specialist">
+       <id column ="idSpecialist" name="id" type="java.lang.Long">
+           <generator class="increment"/>
+       </id>
+        <property column="Name" name="name" type="java.lang.String"/>
+        <property column="Surname" name="surName" type="java.lang.String"/>
+        <property column="FathersName" name="fathersName" type="java.lang.String"/>
+        <property column="position" name="position" type="java.lang.String"/>
+        <property column="rank" name="rank" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

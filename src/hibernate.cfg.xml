@@ -8,16 +8,9 @@
         <property name="connection.driver_class">com.mysql.jdbc.Driver </property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">root</property>
-        <mapping class="entityClasses.ActionEntity"/>
-        <mapping class="entityClasses.AdditionEntity"/>
-        <mapping class="entityClasses.ConscriptcardEntity"/>
-        <mapping class="entityClasses.CorpsEntity"/>
-        <mapping class="entityClasses.DecisionEntity"/>
-        <mapping class="entityClasses.DocumentEntity"/>
-        <mapping class="entityClasses.InnerdocumentEntity"/>
-        <mapping class="entityClasses.MedicalunitEntity"/>
-        <mapping class="entityClasses.SpecialistEntity"/>
-        <!-- DB schema will be updated if needed -->
+
+        <mapping resource="hibernateMapping/Specialist.nbm.xml"/>
+                <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>
 </hibernate-configuration>
