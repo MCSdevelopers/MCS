@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by user on 06.03.2015.
  */
 public class Specialist {
-    private Long id;
+    private int id;
     private String name;
     private String surName;
     private String fathersName;
@@ -24,7 +24,7 @@ public class Specialist {
         return fathersName;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
@@ -62,7 +62,7 @@ public class Specialist {
         this.name = name;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 }
