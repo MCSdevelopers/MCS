@@ -7,6 +7,8 @@ import logic.Specialist;
  */
 public class Factory {
     private static SpecialistDAO specialistDAO = null;
+    private static ActionDAO actionDAO = null;
+    private static DecisionDAO decisionDAO = null;
     private static Factory instance = null;
 
     public static synchronized Factory getInstance(){
@@ -22,5 +24,20 @@ public class Factory {
         }
         return specialistDAO;
     }
+
+    public static ActionDAO getActiontDAO(){
+        if (actionDAO==null){
+            actionDAO = new ActionDAO();
+        }
+        return actionDAO;
+    }
+
+    public static DecisionDAO getDecisionDAO(){
+        if (decisionDAO==null){
+            decisionDAO = new DecisionDAO();
+        }
+        return decisionDAO;
+    }
+
 
 }

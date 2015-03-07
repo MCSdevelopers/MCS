@@ -10,6 +10,8 @@
         <property name="hibernate.connection.password">root</property>
 
         <mapping resource="hibernateMapping/Specialist.nbm.xml"/>
+        <mapping resource="hibernateMapping/Action.nbm.xml"/>
+        <mapping resource="hibernateMapping/Decision.nbm.xml"/>
                 <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>
